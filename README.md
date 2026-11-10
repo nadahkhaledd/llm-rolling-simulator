@@ -37,8 +37,8 @@ out/{instance_size}/           ← Results organized by instance size (gitignore
 ## Prerequisites
 
 - Python 3.12+
-- Antonio's Stage-1 package (`pacs-project/`) installed as editable:
-  `pip install -e ../pacs-project`
+- [Antonio's Stage-1 package](https://github.com/antonioarbizzanitonelli/pacs-project)
+  installed as editable: `pip install -e ../pacs-project`
 
 ## How to run
 
@@ -93,9 +93,10 @@ automatically.
 
 ## Data
 
-Azure LLM Inference Trace 2024 (code-completion trace). May 14 is the
-busiest day (~3.21M requests). The raw CSVs are not included due to size;
-download from the Azure Public Dataset and run the scripts to process:
+[Azure LLM Inference Trace 2024](https://github.com/Azure/AzurePublicDataset/blob/master/AzureLLMInferenceDataset2024.md)
+(code-completion trace). May 14 is the busiest day (~3.21M requests).
+The raw CSVs are not included due to size; download from the Azure
+Public Dataset and run the scripts to process:
 
 ```bash
 python scripts/extract_day_data.py --day 2024-05-14 data/AzureLLMInferenceTrace_code_1week.csv
